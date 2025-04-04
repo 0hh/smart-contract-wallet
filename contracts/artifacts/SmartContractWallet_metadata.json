@@ -11,6 +11,23 @@
 				"type": "constructor"
 			},
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -56,11 +73,11 @@
 	},
 	"sources": {
 		"contracts/SmartContractWallet.sol": {
-			"keccak256": "0x169cae5d4973425d930f526462c903c50010250c5e1a7af7ba052ffc11a3f454",
+			"keccak256": "0x6b11d972a76b15fc08254a6821234c153d9165f1f8e199197ce2d2bf69976835",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://704150e01f61be240a4e8f49cba47155bb3b3812f1c4f17ab173a4370e5d1906",
-				"dweb:/ipfs/QmQmeXLUAaRR6BTzH15YzadUFUKHSD6n3fKEd2V9zRzD6V"
+				"bzz-raw://a195e53d378d15269ffbe84e7fee73736cf5a09c5d5aa65b44564405e8a76377",
+				"dweb:/ipfs/QmWvPgNxNArt8ptt8aNGq4CVmzGWJMXgoJgNKuKNunxAoV"
 			]
 		}
 	},

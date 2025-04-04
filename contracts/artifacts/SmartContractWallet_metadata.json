@@ -113,6 +113,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address payable",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "proposeNewOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "_for",
 						"type": "address"
@@ -208,11 +221,11 @@
 	},
 	"sources": {
 		"contracts/SmartContractWallet.sol": {
-			"keccak256": "0xebca075b84ca7e009caf90d899f92e399c0b9267cbd5ced9a29734a114ae8ebb",
+			"keccak256": "0xea922f9babf4c9aaadb1360d768db09658833b5b17843874bda5c89ccd4c37b5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9d5b07700964686dff263151b6984637abc20aca7f48ce745cd39dd94393d55a",
-				"dweb:/ipfs/QmYpehpCx8VFcVBEF2MbiVFKKsUwHxPeWNe655LNojVk7E"
+				"bzz-raw://2c1a391b5cb968c9760bcb357d3c0377974020423e8410787fa1671f3f8145d3",
+				"dweb:/ipfs/QmVpziPK2mtwcdjHRZjwYokMsGSRCFmPxdhEoY9qRgSDve"
 			]
 		}
 	},

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.15+commit.e14f2714"
+		"version": "0.8.16+commit.07a7930e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -15,6 +15,25 @@
 				"type": "fallback"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
@@ -22,6 +41,25 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "isAllowedToSend",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -38,6 +76,53 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_for",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "setAllowance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_payload",
+						"type": "bytes"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -73,11 +158,11 @@
 	},
 	"sources": {
 		"contracts/SmartContractWallet.sol": {
-			"keccak256": "0x6b11d972a76b15fc08254a6821234c153d9165f1f8e199197ce2d2bf69976835",
+			"keccak256": "0x7469285919c24e3472891f34a5844fe87a6413b100848bdec256ad8fe6156565",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a195e53d378d15269ffbe84e7fee73736cf5a09c5d5aa65b44564405e8a76377",
-				"dweb:/ipfs/QmWvPgNxNArt8ptt8aNGq4CVmzGWJMXgoJgNKuKNunxAoV"
+				"bzz-raw://3e7a25f2b0a779120e14bf2409a2f3e4f07f41134a9e5eb96fef7fa975c61dd5",
+				"dweb:/ipfs/QmTX9NBHXU748KEnke6ABJC5dYuorDN794aUYTem99sV1H"
 			]
 		}
 	},

@@ -35,12 +35,44 @@
 			},
 			{
 				"inputs": [],
+				"name": "confirmationsFromGuardiansForRest",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "guardians",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -92,6 +124,24 @@
 					}
 				],
 				"name": "setAllowance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_guardian",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isGuardian",
+						"type": "bool"
+					}
+				],
+				"name": "setGuardian",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -158,11 +208,11 @@
 	},
 	"sources": {
 		"contracts/SmartContractWallet.sol": {
-			"keccak256": "0x7469285919c24e3472891f34a5844fe87a6413b100848bdec256ad8fe6156565",
+			"keccak256": "0xebca075b84ca7e009caf90d899f92e399c0b9267cbd5ced9a29734a114ae8ebb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3e7a25f2b0a779120e14bf2409a2f3e4f07f41134a9e5eb96fef7fa975c61dd5",
-				"dweb:/ipfs/QmTX9NBHXU748KEnke6ABJC5dYuorDN794aUYTem99sV1H"
+				"bzz-raw://9d5b07700964686dff263151b6984637abc20aca7f48ce745cd39dd94393d55a",
+				"dweb:/ipfs/QmYpehpCx8VFcVBEF2MbiVFKKsUwHxPeWNe655LNojVk7E"
 			]
 		}
 	},

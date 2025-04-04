@@ -9,8 +9,18 @@ contract SmartContractWallet {
     mapping(address => uint) public allowance;
     mapping(address => bool) public isAllowedToSend;
 
+    mapping(address => bool) public guardians;
+    address payable nextOwner;
+    uint guardiansResetCount;
+    uint public constant confirmationsFromGuardiansForRest = 3;
+
     constructor() {
         owner = payable(msg.sender);  
+    }
+
+    function setGuardian(address _guardian, bool _isGuardian) public {
+        require(msg.sender == owner, "You are not the owner, aborting");
+        guardians[_guardian] = _isGuardian;
     }
 
     function setAllowance(address _for, uint _amount) public {
@@ -23,6 +33,7 @@ contract SmartContractWallet {
             isAllowedToSend[msg.sender] = false;
         }
     }
+    
 
     function transfer(address payable _to, uint _amount, bytes memory _payload) public returns(bytes memory){
         //require(msg.sender == owner, "You are not the contract owner, aborting");

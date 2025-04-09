@@ -42,5 +42,4 @@ This contract is designed to manage funds using the Ethereum blockchain.
 6. **Check Balance**: Use `getBalance` to view the contract's current Ether balance.
 
 ## Manual Testing
-![image](https://github.com/user-attachments/assets/34cc772f-bcda-4afa-b063-27608e21ecd4)
-
+![image](https://github.com/user-attachments/assets/c1803a3d-5209-4d0a-9087-b227fecdb6c8)

@@ -2,6 +2,14 @@
 
 pragma solidity 0.8.16;
 
+contract Consumer {
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+
+    function deposit() public payable {}
+}
+
 contract SmartContractWallet {
 
     address payable public owner;
@@ -25,7 +33,7 @@ contract SmartContractWallet {
     }
 
     function proposeNewOwner(address payable _newOwner) public {
-        require(guardians[msg.sender], "You are not the owner, aborting");
+        require(guardians[msg.sender], "You are not a guardian of this wallet, aborting");
         require(nextOwnerGuardianVotedBool[_newOwner][msg.sender] == false, "You already voted, aborting");
         if(_newOwner != nextOwner){
             nextOwner = _newOwner;
@@ -44,9 +52,9 @@ contract SmartContractWallet {
         allowance[msg.sender] = _amount;
 
         if(_amount > 0) {
-            isAllowedToSend[msg.sender] = true;
+            isAllowedToSend[_for] = true;
         } else {
-            isAllowedToSend[msg.sender] = false;
+            isAllowedToSend[_for] = false;
         }
     }
     

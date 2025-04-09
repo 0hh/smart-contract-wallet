@@ -40,3 +40,6 @@ This contract is designed to manage funds using the Ethereum blockchain.
 4. **Manage Allowances**: The owner can set allowances for specific addresses using `setAllowance`.
 5. **Transfer Funds**: Use `transfer` to send Ether with optional data payloads.
 6. **Check Balance**: Use `getBalance` to view the contract's current Ether balance.
+
+## Testing
+![image](https://github.com/user-attachments/assets/ab981b52-15b5-48ef-ac0e-d84abff7d173)
